@@ -1,0 +1,18 @@
+{
+    "name": "amandine/compass",
+    "require": {
+        "twig/twig": "^2.4",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "compass\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Amandine Dargon",
+            "email": "amandine.dargon@gmail.com"
+        }
+    ]
+}
