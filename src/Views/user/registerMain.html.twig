@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="container">
+
+    <!-- Si certains champ du formulaire ne sont pas rempli, on affiche un message d'erreur -->
+    {% if errors is defined %}
+    <div class="alert alert-danger">
+        <strong>Danger!</strong> {{ error }}
+    </div>
+    {% endif %}
+    <!-- End -->
+
+    <h1 class="text-center">Add user</h1>
+    <!-- On spécifie vers quelle url la donnée du formulaire doit etre envoyé -->
+    <form action="index.php?section=registersuccess" method="post">
+        <!-- End -->
+        <div>
+            <div class="form-group col-xs-6">
+                <label for="content">First name</label>
+                <input name="content" type="text" class="form-control" id="author" placeholder="First name">
+            </div>
+            <div class="form-group col-xs-6">
+                <label for="author">Last name</label>
+                <input name="author" type="text" class="form-control" id="chapter" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="form-group col-xs-12">
+            <label for="chapter">Address</label>
+            <input name="chapter" type="text" class="form-control" id="chapter" placeholder="Address">
+        </div>
+        <div class="form-group col-xs-12">
+            <label for="date">Birth Date</label>
+            <input name="date" type="date" class="form-control" id="Birth Date">
+        </div>
+        <div class="form-group col-xs-12">
+            <label for="file">Profile Picture Url</label>
+            <input name="image" type="text" class="form-control" id="file" placeholder="Profile Picture URL">
+        </div>
+        <div class="text-center col-xs-12">
+            <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-ok"></i></button>
+        </div>
+    </form>
+
+</div>
+
+    {% endblock %}

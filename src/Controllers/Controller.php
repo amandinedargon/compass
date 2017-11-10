@@ -1,6 +1,6 @@
 <?php
 
-namespace Dojo\Controllers;
+namespace compass\Controllers;
 
 use Twig_Loader_Filesystem;
 use Twig_Environment;

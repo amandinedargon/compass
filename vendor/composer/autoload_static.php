@@ -4,16 +4,21 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit68d1c962201dee58162334087c7b98f5
+class ComposerStaticInit1073fa018f1f2d9b4d2861c71725958e
 {
     public static $files = array (
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'c' => 
+        array (
+            'compass\\' => 8,
+        ),
         'T' => 
         array (
             'Twig\\' => 5,
@@ -32,13 +37,17 @@ class ComposerStaticInit68d1c962201dee58162334087c7b98f5
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
-        'D' => 
+        'E' => 
         array (
-            'Dojo\\' => 5,
+            'Egulias\\EmailValidator\\' => 23,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'compass\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
@@ -63,9 +72,9 @@ class ComposerStaticInit68d1c962201dee58162334087c7b98f5
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'Dojo\\' => 
+        'Egulias\\EmailValidator\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
         ),
     );
 
@@ -77,14 +86,21 @@ class ComposerStaticInit68d1c962201dee58162334087c7b98f5
                 0 => __DIR__ . '/..' . '/twig/twig/lib',
             ),
         ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Lexer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit68d1c962201dee58162334087c7b98f5::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit68d1c962201dee58162334087c7b98f5::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit68d1c962201dee58162334087c7b98f5::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1073fa018f1f2d9b4d2861c71725958e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1073fa018f1f2d9b4d2861c71725958e::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit1073fa018f1f2d9b4d2861c71725958e::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

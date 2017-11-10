@@ -1,24 +1,89 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="global">
-    {% block css %}
-    {% endblock %}
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        {#<link rel="stylesheet" href="global">#}
+        <title>Compass</title>
+
+        {% block css %}
+
+            <!-- les liens sont errones -->
+            <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/200px-PHP-logo.svg.png">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel="stylesheet" href="../src/Views/assets/css/stylesheet.css">
+
+        {% endblock %}
+
+    </head>
+
+    <body>
 
     {% block nav %}
+
+        <header>
+                <!-- ajout selon marius -->
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <!-- <nav class="navbar navbar-inverse kaamelott-underline"> -->
+                    <div class="container">
+                        <!-- ajout selon marius -->
+                        <div class="navbar-header">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Naviguer</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand logo-font" href="index.php">Compass</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="index.php?section=registermain"><i class="glyphicon glyphicon-plus"></i> New user</a>
+                                </li>
+                                <!-- ajouter un lien conditionnel de connexion avec twig  -->
+                                <li>
+                                    <a href="index.php?section=admin" class="nav-link active"><i class="glyphicon glyphicon-lock"></i> Admin</a>
+                                </li>
+                            </ul>
+                        </div>
+                </nav>
+        </header>
+
     {% endblock %}
 
     {% block body %}
     {% endblock %}
 
     {% block footer %}
+
+        <footer>
+            <div class="container-fluid">Yo footer
+                <ul>
+                    <li>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     {% endblock %}
 
 </body>
