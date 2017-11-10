@@ -4,10 +4,6 @@
 
     <div class="container">
 
-        <div class="kaamelott-banner jumbotron kaamelott-underline">
-            <h1>Compass</h1>
-            <p>WildCodeSchool database</p>
-        </div>
 
         <div class="row">
             <!-- Le bloc ci dessous permet d'afficher les card avec chaque citation, ce dernier devra se répéter pour toutes les citations -->
@@ -38,7 +34,7 @@
                                 <!-- End -->
 
                                 <!-- Ici devra s'afficher le chapitre de la citation -->
-                                <i>{{ citation.author }}</i>
+                                <i>{{ citation.date }}</i>
                                 <!-- End -->
 
                             </p>
@@ -59,6 +55,9 @@
             {% endfor %}
             <!-- End block card citation -->
         </div>
+
+
+
 
     </div>
 

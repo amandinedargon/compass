@@ -49,4 +49,6 @@ class ModelManager
         // Requete d'ajout en base de donnée
         mysqli_query($bdd, "INSERT INTO citation (author, chapter, content, date, image) VALUES ('$author', '$chapter', '$content', '$date', '$image')");
     }
+
+
 }

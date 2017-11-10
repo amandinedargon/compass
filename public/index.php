@@ -2,9 +2,12 @@
 
 require '../vendor/autoload.php';
 require '../src/Model/connectQuote.php';
+
 //
 use compass\Controllers\DefaultController;
-//
+use compass\Controllers\Person;
+
+
 $defaultController = new DefaultController();
 
 // If no settings in the GET => go to DefaultController.php + function indexAction

@@ -66,16 +66,17 @@ body {
 ==================================================
 \************************************************/
 
-.kaamelott-underline {
-    border-bottom: solid 5px #93AAEB;
-}
+/*.kaamelott-underline {*/
+    /*border-bottom: solid 5px #93AAEB;*/
+/*}*/
 
-.kaamelott-banner.jumbotron {
-    background-image: url('http://www.visigami.com/wp-content/uploads/2015/10/php-banner-520x245.jpg');
-    background-position: top center;
+.kaamelott-banner {
+    background-image: url('..//img/logo.png');
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+    background-size: 30vw;
+    background-size: percentage;
+    color: black;
     font-family: 'VT323';
 }
 
@@ -187,7 +188,7 @@ footer ul li {
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
 #map {
-    height: 50vh;
+    height: 70vh;
     /*width: 100%;*/
     margin: 0;
     padding: 0;

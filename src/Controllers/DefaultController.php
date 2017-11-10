@@ -5,8 +5,12 @@ namespace compass\Controllers;
 use compass\Model\ModelManager;
 use compass\Services\GoogleServices;
 use GuzzleHttp\Client;
+use Swift_SmtpTransport;
+use Swift_Mailer;
+use Swift_Message;
 
-/**
+
+    /**
  * Class DefaultController
  * @package compass\Controllers
  */
@@ -55,6 +59,7 @@ class DefaultController extends Controller
                 ));
 
     }
+
 
 //    public function registerFailAction(){
 //        return $this->twig->render('user/registerFail.html.twig');

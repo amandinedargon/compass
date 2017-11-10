@@ -2,21 +2,24 @@
 
 {% block body %}
 
-    <div class="container"
-    <div class="col-xs-12">
-        <div class="kaamelott-banner jumbotron kaamelott-underline">
-            <h1>Compass</h1>
-            <p>WildCodeSchool database</p>
-        </div>
-    </div>
-
     <div class="container">
         <div class="row">
-            {#<div class="container col-xs-12 col-sm-6">#}
-                {#<h2>Calendar</h2>#}
-                {#<p>...</p>#}
-            {#</div>#}
-            <div class="container col-xs-12">
+            <div class="container col-xs-12 col-sm-6">
+                <h2>Birthdays</h2>
+                <p>
+                    {% for citation in alls if citation.date == "1987-11-10 00:00:00" %}
+                            <img src="https://media.giphy.com/media/cReBRwdnlW9gs/giphy.gif" width="80%">
+                                <p>Happy birthday !
+                                    {{ citation.content}}
+                                 !!!</p>
+                        {% else %}
+                            <img src="https://media.giphy.com/media/gSotjAQJmPTJm/giphy.gif" width="80%">
+                    {% endfor %}
+
+                </p>
+            </div>
+
+            <div class="container col-xs-12 col-sm-6">
                 <h2>Maps</h2>
                 <div id="map">
                     <script>
@@ -53,6 +56,9 @@
                         }
 
                         var locations = [
+//                            {lat: 48.8490723, lng: 2.3504169}
+//                            {lat: 48.8490723, lng: 2.3504169}
+//                            {lat: 48.8490723, lng: 2.3504169}
                             {% for citation in alls %}
                             {{ citation.chapter }},
                             {% endfor %}
@@ -68,5 +74,6 @@
             </div>
         </div>
     </div>
+
 
 {% endblock body %}

@@ -1,10 +1,10 @@
 <?php
 
 	// Création d'une connection à la base de base de donnée
-	define("SERVER", "localhost:3306");
-	define("USER", "root");
-	define("PASS", "root");
-	define("DB", "checkpoint-1-27/10/2017"); 
+	define("SERVER", "sql11.freemysqlhosting.net:3306");
+	define("USER", "sql11204139");
+	define("PASS", "hm6T5Ccxq4");
+	define("DB", "sql11204139");
 
 	$bdd = mysqli_connect(SERVER, USER, PASS, DB);
 
