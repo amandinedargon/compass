@@ -1,0 +1,195 @@
+/************************************************\
+==================================================
+1. Font
+2. Navbar
+3. Citation
+4. Footer
+==================================================
+\************************************************/
+
+/************************************************\
+==================================================
+1. Font
+==================================================
+\************************************************/
+@font-face {
+    font-family: 'VT323';
+    src: url('../fonts/VT323-Regular.ttf');
+}
+
+.logo-font {
+    font-family: 'VT323';
+}
+
+/* CSS pour login */
+.form-signin {
+  background: #f8f8f8;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+/* CSS pour navbar */
+body {
+    padding-bottom: 70px;
+    padding-top: 70px; 
+}
+
+
+
+/************************************************\
+==================================================
+2. Navbar
+==================================================
+\************************************************/
+
+.navbar, .container .jumbotron {
+    border-radius: 0px;
+}
+
+.navbar-brand.kaamelott-font {
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-brand.kaamelott-font:hover {
+    color: #ddd;
+}
+
+/************************************************\
+==================================================
+3. Citation
+==================================================
+\************************************************/
+
+/*.kaamelott-underline {*/
+    /*border-bottom: solid 5px #93AAEB;*/
+/*}*/
+
+.kaamelott-banner {
+    background-image: url('..//img/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30vw;
+    background-size: percentage;
+    color: black;
+    font-family: 'VT323';
+}
+
+p.source {
+    text-align: right;
+    color: black;
+    font-style: italic;
+}
+
+.quote {
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.quote .hider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(0deg, #fff, transparent);
+}
+
+.thumbnail .img-box {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.thumbnail .img-box img {
+    width: 100%;
+}
+
+.thumbnail {
+    height: 420px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.thumbnail blockquote {
+    padding: 10px;
+    border-left: none;
+}
+
+blockquote {
+    border-left: 5px solid #93AAEB;
+    height: 100px;
+}
+
+.item-actions {
+    text-align: right;
+    padding: 0 5px;
+}
+
+.btn.btn-kaamelott {
+    background-color: #93AAEB;
+    color: white;
+}
+
+.btn.btn-kaamelott:hover {
+    background-color: #93AAEB;
+}
+
+/************************************************\
+==================================================
+4. Footer
+==================================================
+\************************************************/
+
+/* FOOTER ON BOTTOM WHATEVER THE SIZE OF THE PAGE */
+body {
+    margin-bottom: 30px;   
+}
+
+footer {
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    background-color: grey; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    position: fixed;
+}
+
+footer ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
+/************************************************\
+==================================================
+5. Maps
+==================================================
+\************************************************/
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+    height: 70vh;
+    /*width: 100%;*/
+    margin: 0;
+    padding: 0;
+}

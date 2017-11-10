@@ -1,0 +1,21 @@
+{
+    "name": "ln-t/compass",
+    "require": {
+        "twig/twig": "^2.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "twbs/bootstrap": "^3.3",
+        "components/font-awesome": "^4.7",
+        "swiftmailer/swiftmailer": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "compass\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LN-T",
+            "email": "ln-t@hotmail.com"
+        }
+    ]
+}
